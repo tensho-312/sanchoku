@@ -297,7 +297,7 @@
           <label for="commentText">コメント</label>
           <textarea id="commentText" placeholder="コメント" required></textarea>
         </div>
-        <button type="submit" id="submitBtn">お芋への愛を送信する</button>
+        <button type="submit" id="submitBtn">コメントを送信する</button>
       </form>
 
       <!-- コメント表示エリア -->
@@ -432,14 +432,14 @@
         await loadComments();
 
         submitBtn.disabled = false;
-        submitBtn.textContent = 'お芋への愛を送信する';
+        submitBtn.textContent = 'コメントを送信する';
 
       } catch (error) {
         console.error("Error adding document: ", error);
         alert('コメントの送信に失敗しました。詳細: ' + error.message);
         const submitBtn = document.getElementById('submitBtn');
         submitBtn.disabled = false;
-        submitBtn.textContent = 'お芋への愛を送信する';
+        submitBtn.textContent = 'コメントを送信する';
       }
     });
 
